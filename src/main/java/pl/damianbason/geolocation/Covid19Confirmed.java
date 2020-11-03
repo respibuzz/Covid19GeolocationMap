@@ -40,7 +40,7 @@ public class Covid19Confirmed {
         for (CSVRecord strings : csvParser){
         Double lat = Double.parseDouble(strings.get("Lat"));
         Double lon = Double.parseDouble(strings.get("Long"));
-        String text = strings.get("10/8/20");
+        String text = strings.get("11/1/20");
         repository.addPoint(new Point(lat, lon, text));
         }
     }
